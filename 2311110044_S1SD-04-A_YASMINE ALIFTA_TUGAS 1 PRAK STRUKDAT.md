@@ -169,6 +169,8 @@ Pada kode diatas, nilai array di deklarasikan di inisialisasikan ke setiap eleme
 
 ### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
+1.)
+
 ```C++
 #include <iostream>
 
@@ -202,8 +204,46 @@ Program diatas digunakan untuk menghitung rata-rata dari 3 bilangan yang di masu
 #### Output:
 <img width="347" alt="Screenshot 2024-03-09 112113" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/45b5bbbd-dfee-4776-a028-87cc8c6109ee">
 
+Dapat diperoleh hasil/output dari program menghitung rata-rata dari 3 bilangan diatas adalah 20.
+
 #### Full code Screenshot:
 <img width="960" alt="Screenshot 2024-03-09 112113" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/f556b300-bf7f-4d8e-9459-17a76914693a">
+
+2.) 
+
+```C++
+#include <iostream>
+
+// Fungsi untuk menjumlahkan dua bilangan
+int tambah(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    // Input dari pengguna
+    int angka1, angka2;
+    std::cout << "Masukkan angka pertama: ";
+    std::cin >> angka1;
+    std::cout << "Masukkan angka kedua: ";
+    std::cin >> angka2;
+
+    // Memanggil fungsi tambah dan menampilkan hasilnya
+    int hasilTambah = tambah(angka1, angka2);
+    std::cout << "Hasil penjumlahan: " << hasilTambah << std::endl;
+
+
+    return 0;
+}
+
+```
+Pada kode program diatas, program menerima dua angka dari pengguna melalui input, kemudian menjumlahkannya menggunakan fungsi tambah dan menampilkan hasilnya. Fungsi tambah didefinisikan untuk menjumlahkan dua bilangan bulat, dan dalam fungsi main, program meminta pengguna memasukkan dua angka menggunakan fungsi cin. Setelah itu, fungsi tambah dipanggil dengan dua angka yang dimasukkan pengguna, dan hasil penjumlahannya disimpan dalam variabel hasilTambah. Akhirnya, program menampilkan hasil penjumlahan tersebut menggunakan fungsi cout. 
+#### Output:
+<img width="414" alt="Screenshot 2024-03-12 132010" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/71505d5a-7fc4-4014-97cd-196575fe1d37">
+
+Dapat diperoleh hasil/output dari program menghitung jumlah dari 2 bilangan diatas adalah 15.
+
+#### Full code Screenshot:
+<img width="960" alt="Screenshot 2024-03-12 132010" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/89fa36a3-0074-4eb2-8fa6-9ab70a47e8ae">
 
 Kesimpulan dari materi tipe data primitif:
 
@@ -217,72 +257,64 @@ Fungsi class:
 
 Class berfungsi untuk membuat tipe data kompleks dengan atribut dan metode yang dapat diakses melalui objek. Aksesibilitas anggota class adalah private, yang berarti jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menggunakan publik.
 
-```C++
-#include <iostream>
-#include <string>
-
-class Asal {
-private:
-    std::string asal;
-    int umur;
-
-public:
-    Asal(std::string n, int u) : asal(n), umur(u) {}
-
-    void Info() {
-        std::cout << "Asal: " << asal << "\nUmur: " << umur << " tahun\n";
-    }
-};
-
-int main() {
-    Asal mahasiswa1("Pati", 19);
-    mahasiswa1.Info();
-
-    return 0;
-}
-
-```
-Kode program diatas menggunakan fungsi class untuk merepresentasikan data. Kelas Asal memiliki dua anggota yaitu, asal dan umur. Terdapat juga fungsi Info() untuk mencetak informasi tentang asal dan umur. Kode ini membuat objek mahasiswa dari kelas Asal dan kemudian menggunakan fungsi Info() untuk mencetak informasi tentang mahasiswa1 yang menghasilkan output seperti pada gambar dibawah.
-
-#### Output:
-<img width="392" alt="Screenshot 2024-03-12 114932" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/bc4e24d5-6183-4579-b65d-da27747b4a58">
-
-#### Full code Screenshot:
-
-<img width="960" alt="Screenshot 2024-03-12 115127" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/639e6a29-4541-4a73-9446-abe177959a08">
-
 Fungsi struct:
 
 Struct digunakan untuk menyimpan data dengan struktur yang sederhana dan biasanya tidak memiliki metode atau fungsi terkait. Biasanya sering digunakan untuk keperluan ata sederhana dan kompleks, dan dapat diakses secara langsung tanpa pembuatan objek. Struct aksesibilitasnya adalah publik
 
 ```C++
 #include <iostream>
-#include <string>
 
-struct Person {
+class Mahasiswa {
+private:
     std::string nama;
     std::string ttl;
+public:
+    Mahasiswa(std::string nama, std::string ttl) {
+        this->nama = nama;
+        this->ttl = ttl;
+    }
+    void tampil() {
+        std::cout << "Nama: " << nama << std::endl;
+        std::cout << "Ttl : " << ttl << std::endl;
+    }
+};
+
+struct Asal {
+private:
+    std::string asal;
+    int umur;
+public:
+    Asal(std::string asal, int umur) {
+        this->asal = asal;
+        this->umur = umur;
+    }
+    void tampil() {
+        std::cout << "Asal: " << asal << std::endl;
+        std::cout << "Umur: " << umur << " tahun\n";
+    }
 };
 
 int main() {
-    Person person1 = {"Yasmine Alifta", "8 Juli 2004" };
+    Mahasiswa mhs("Yasmine Alifta", "8 Juli 2004");
+    mhs.tampil();
 
-    std::cout << "Nama: " << person1.nama << "\n";
-    std::cout << "Ttl : " << person1.ttl ;
+    Asal asal("Pati", 19);
+    asal.tampil();
 
     return 0;
 }
-
 ```
+Kode program diatass menggunakan fungsi class dan struct. Terdapat dua class yang didefinisikan, yaitu Mahasiswa dan Asal. Class Mahasiswa memiliki dua atribut private, yaitu nama dan ttl,serta method public tampil yang akan menampilkan nilai atribut tersebut. Class Asal juga memiliki dua atribut private, yaitu asal dan umur, serta method public tampil yang akan menampilkan nilai atribut tersebut. Terdapat dua objek yang dibuat, yaitu mhs dan asal. Setelah objek dibuat, masing-masing objek dipanggil method tampil untuk menampilkan nilai atribut tersebut.
+Kode program diatas akan menghasilkan output berupa nama, ttl, asal, dan umur masing-masing objek yang dibuat.
 
-Pada kode diatas, struct person digunakan untuk menyimpan informasi yang berisi nama dan ttl. Kemudian kode tersebut membuat objek person1 dari struct person dan mengisi informasi di dalam nya. kode akan dieksekusi dengan menggunakan fungsi cout dan di dapatkan output seperti pada gambar dibawah.
 
 #### Output:
-<img width="423" alt="Screenshot 2024-03-12 114853" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/a9734a64-5ac9-4772-8eba-9c2a64221984">
+<img width="362" alt="Screenshot 2024-03-12 130443" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/de086008-1f6e-4ec6-a357-cdec736eddb6">
+
+Dari program diatas didapatkan output berisi data Nama, Ttl, Asal, dan Umur.
 
 #### Full code Screenshot:
-<img width="960" alt="Screenshot 2024-03-12 114853" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/b5c10637-cd7e-46bc-9b02-047e84908ecf">
-
+<img width="960" alt="Screenshot 2024-03-12 130443" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/0c2168e4-929a-4eb9-899d-7fa7a0c42520">
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
 ```C++
@@ -322,6 +354,8 @@ int main() {
 Pada kode program diatas, kode membuat objek dari kelas map dengan nama "buah" dan menginisialisasinya. Kemudian kode menambahkan data ke map "buah". Data yg ditambahkan adalah kombinasi key dan nilai, yang dimana key nya adalah nama buah dan nilai adalah jumlah buah yang ada.Kemudian untuk menampilkan data buah nya menggunakan perulangan for. Kode akan mencari data di map menggunakan fungsi find yang akan mencari dan mengembalikan iterasi ke data yang ditemukan. Jika tidak ditemukan, fungsi find akan mengembalikan nilai end dan mencetak pesan menggunakan fungsi cout bahwa buah tidak ditemukan. Jika buah yang dicari ditemukan kode akan mencetak jumlah buah yang tersedia menggunakan fungsi cout dan akan mengembalikan nilai 0.
 #### Output:
 <img width="373" alt="Screenshot 2024-03-09 113621" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/de8212e7-2657-47bd-8802-ac110d6cacc0">
+
+Dari program diatas didapatkan output berisi daftar nama buah beserta jumlahnya dan menampilkan jumlah buah yang dicari.
 
 #### Full code Screenshot:
 <img width="960" alt="Screenshot 2024-03-09 113621" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/c544942d-2fec-47e6-b026-bb6ebc1724bb">
