@@ -1,7 +1,7 @@
 ## Repository praktikum algoritma dan struktur data
 
 <pre>
-Nama : Arvinanto Bahtiar
-NIM : 2211110014
-Kelas : S1SD03-A
+Nama : Yasmine Alifta
+NIM : 2311110044
+Kelas : S1SD04-A
 </pre>
