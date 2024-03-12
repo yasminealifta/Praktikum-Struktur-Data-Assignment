@@ -242,7 +242,7 @@ int main() {
 }
 
 ```
-Kode program diatas menggunakan fungsi class untuk merepresentasikan data. Kelas Assal memiliki dua anggota yaitu, asal dan umur. terdapat juga fungsi info() untuk mencetak informasi tentang asal dan umur. Kode ini membuat objek mahasiswa dari kelas Asal dan kemudian menggunakan fungsi Info() untuk mencetak informasi tentang mahasiswa1 yang menghasilkan output seperti pada gambar dibawah.
+Kode program diatas menggunakan fungsi class untuk merepresentasikan data. Kelas Asal memiliki dua anggota yaitu, asal dan umur. Terdapat juga fungsi Info() untuk mencetak informasi tentang asal dan umur. Kode ini membuat objek mahasiswa dari kelas Asal dan kemudian menggunakan fungsi Info() untuk mencetak informasi tentang mahasiswa1 yang menghasilkan output seperti pada gambar dibawah.
 
 #### Output:
 <img width="392" alt="Screenshot 2024-03-12 114932" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/bc4e24d5-6183-4579-b65d-da27747b4a58">
