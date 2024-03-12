@@ -242,6 +242,8 @@ int main() {
 }
 
 ```
+Kode program diatas menggunakan fungsi class untuk merepresentasikan data. Kelas Assal memiliki dua anggota yaitu, asal dan umur. terdapat juga fungsi info() untuk mencetak informasi tentang asal dan umur. Kode ini membuat objek mahasiswa dari kelas Asal dan kemudian menggunakan fungsi Info() untuk mencetak informasi tentang mahasiswa1 yang menghasilkan output seperti pada gambar dibawah.
+
 #### Output:
 <img width="392" alt="Screenshot 2024-03-12 114932" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/bc4e24d5-6183-4579-b65d-da27747b4a58">
 
@@ -272,6 +274,9 @@ int main() {
 }
 
 ```
+
+Pada kode diatas, struct person digunakan untuk menyimpan informasi yang berisi nama dan ttl. Kemudian kode tersebut membuat objek person1 dari struct person dan mengisi informasi di dalam nya. kode akan dieksekusi dengan menggunakan fungsi cout dan di dapatkan output seperti pada gambar dibawah.
+
 #### Output:
 <img width="423" alt="Screenshot 2024-03-12 114853" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/a9734a64-5ac9-4772-8eba-9c2a64221984">
 
