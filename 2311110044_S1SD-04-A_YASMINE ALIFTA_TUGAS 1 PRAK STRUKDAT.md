@@ -217,60 +217,66 @@ Fungsi class:
 
 Class berfungsi untuk membuat tipe data kompleks dengan atribut dan metode yang dapat diakses melalui objek. Aksesibilitas anggota class adalah private, yang berarti jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menggunakan publik.
 
+```C++
+#include <iostream>
+#include <string>
+
+class Asal {
+private:
+    std::string asal;
+    int umur;
+
+public:
+    Asal(std::string n, int u) : asal(n), umur(u) {}
+
+    void Info() {
+        std::cout << "Asal: " << asal << "\nUmur: " << umur << " tahun\n";
+    }
+};
+
+int main() {
+    Asal mahasiswa1("Pati", 19);
+    mahasiswa1.Info();
+
+    return 0;
+}
+
+```
+#### Output:
+<img width="392" alt="Screenshot 2024-03-12 114932" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/bc4e24d5-6183-4579-b65d-da27747b4a58">
+
+#### Full code Screenshot:
+
+<img width="960" alt="Screenshot 2024-03-12 115127" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/639e6a29-4541-4a73-9446-abe177959a08">
+
 Fungsi struct:
 
 Struct digunakan untuk menyimpan data dengan struktur yang sederhana dan biasanya tidak memiliki metode atau fungsi terkait. Biasanya sering digunakan untuk keperluan ata sederhana dan kompleks, dan dapat diakses secara langsung tanpa pembuatan objek. Struct aksesibilitasnya adalah publik
 
 ```C++
 #include <iostream>
+#include <string>
 
-class Mahasiswa {
-private:
+struct Person {
     std::string nama;
     std::string ttl;
-public:
-    Mahasiswa(std::string nama, std::string ttl) {
-        this->nama = nama;
-        this->ttl = ttl;
-    }
-    void tampil() {
-        std::cout << "Nama: " << nama << std::endl;
-        std::cout << "Ttl : " << ttl << std::endl;
-    }
-};
-
-struct Asal {
-private:
-    std::string asal;
-    int umur;
-public:
-    Asal(std::string asal, int umur) {
-        this->asal = asal;
-        this->umur = umur;
-    }
-    void tampil() {
-        std::cout << "Asal: " << asal << std::endl;
-        std::cout << "Umur: " << umur << std::endl;
-    }
 };
 
 int main() {
-    Mahasiswa mhs("Yasmine Alifta", "8 Juli 2004");
-    mhs.tampil();
+    Person person1 = {"Yasmine Alifta", "8 Juli 2004" };
 
-    Asal asal("Pati", 19);
-    asal.tampil();
+    std::cout << "Nama: " << person1.nama << "\n";
+    std::cout << "Ttl : " << person1.ttl ;
 
     return 0;
 }
-```
-Kode program diatas memiliki 2 kelas yaitu Mahasiswa dan Asal. Kelas Mahasiswa memiliki 2 atribut yaitu nama dan ttl, Asal juga memiliki 2 atribut yaitu asal dan umur. Program tersebut menggunakan tipe data string dan integer. String digunakan untuk menyimpan nama mahasiswa , ttl dan asal. Integer digunakan untuk menyimpan umur. Semua program akan dicetak menggunakan fungsi cout dan akan menampilkan output seperti pada gambar dibawah. Ketika program telah berjalan dengan benar maka akan mengembalikan nilai 0.
 
+```
 #### Output:
-<img width="341" alt="Screenshot 2024-03-09 113425" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/8dbe8cda-caed-4d33-9ca1-fc934cd4c1ad">
+<img width="423" alt="Screenshot 2024-03-12 114853" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/a9734a64-5ac9-4772-8eba-9c2a64221984">
 
 #### Full code Screenshot:
-<img width="960" alt="Screenshot 2024-03-10 180640" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/1e39cbdc-40c5-401c-8b95-69eb87498ed7">
+<img width="960" alt="Screenshot 2024-03-12 114853" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/b5c10637-cd7e-46bc-9b02-047e84908ecf">
 
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
