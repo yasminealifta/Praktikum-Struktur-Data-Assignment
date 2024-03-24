@@ -70,10 +70,12 @@ int main()
 }
 ```
 
-Program ini menampilkan cara mendefinisikan, mengisi, dan menampilkan data dalam array 3 dimensi. Pertama, array arr dideklarasikan dengan 2 lapisan, masing-masing berisi array 3x3. Lalu, perulangan bersarang digunakan untuk meminta pengguna memasukkan nilai untuk setiap elemen array. Kemudian, loop bersarang yang serupa digunakan untuk menampilkan nilai elemen array dengan label. Terakhir, loop bersarang tanpa label digunakan untuk menampilkan data array secara ringkas.
+Program ini menampilkan cara mendefinisikan, mengisi, dan menampilkan data dalam array 3 dimensi. Pada kode diatas user diminta untuk memasukkan bilangan yang nantinya akan ditampilkan sebgai data array. Pertama, array arr dideklarasikan dengan 2 lapisan, masing-masing berisi array 3x3. Lalu, perulangan bersarang digunakan untuk meminta pengguna memasukkan nilai untuk setiap elemen array. Kemudian, perulangan bersarang yang serupa digunakan untuk menampilkan nilai elemen array dengan label. Perulangan bersarang yang terakhir tanpa label digunakan untuk menampilkan data array secara ringkas.
 
 #### Output :
 <img width="207" alt="Screenshot 2024-03-23 122529" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/ffcbdab6-a337-485e-90e4-bf107027bc88">
+
+Dari program diatas didapatkan output berisi daftar nilai array dengan jumlah baris, jumlah kolom, dan jumlah layer/lapisan sudah dibentuk di dalam program. Sehingga user hanya memasukkan angka nya saja.
 
 #### Full Code Screenshoot :
 <img width="960" alt="Screenshot 2024-03-23 122740" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/60a9da25-c00f-4878-bce7-4b7fd3abf4ff">
@@ -112,10 +114,12 @@ int main()
     cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << lokasi << endl;
 }
 ```
-Program diatas untuk mencari nilai maksimal pada Array. Program meminta user untuk memasukkan panjang array dan nilai elemen array. Kemudian, program mencari nilai maksimum dengan membandingkan setiap elemen array. Jika ada elemen yang lebih besar dari nilai maksimum saat ini, maka nilai maksimum diperbarui dan lokasinya disimpan. Program akan menampilkan nilai maksimum dan lokasinya ke layar.
+Program diatas untuk mencari nilai maksimal pada Array. Program meminta user untuk memasukkan panjang array dan nilai elemen array. Kemudian, program mencari nilai maksimum dengan membandingkan setiap elemen array. Jika ada elemen yang lebih besar dari nilai maksimum saat ini, maka nilai maksimum diperbarui dan lokasinya disimpan. Program akan menampilkan nilai maksimum dan lokasinya ke layar, seperti pada gambar dibawah.
 
 #### Output :
 <img width="432" alt="Screenshot 2024-03-23 121458" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/460d7572-7fd1-4c3c-ae60-79b83497e081">
+
+Dari program diatas didapatkan output berisi panjang array yang tadi diinputkan, yaitu 3 angka dengan nilai array yang diawali dengan indeks ke-0 sampai 2 terdapat angka 1, 2, dan 3. Didapat juga nilai maksimum dari array yang ada adalah angka 3 yang berada di array ke-2
 
 #### Full Code Screenshoot :
 <img width="960" alt="Screenshot 2024-03-23 122145" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/220fa272-c4f1-42cd-aa84-67c49fb009e5">
@@ -165,10 +169,12 @@ int main() {
 }
 ```
 
-Program diatas meminta pengguna untuk memasukkan jumlah data, kemudian membaca data tersebut dan menyimpannya dalam sebuah array. Program kemudian memisahkan data menjadi dua kategori: angka genap dan angka ganjil. Program kemudian menampilkan semua data dalam array, diikuti dengan daftar angka genap dan ganjil secara terpisah.
+Program diatas meminta pengguna untuk memasukkan jumlah data melalui fungsi cout, kemudian membaca data tersebut dan menyimpannya dalam sebuah array yang dideklarasikan sebagai [n] menggunakan fungsi cin. Program kemudian memisahkan data menjadi dua kategori: angka genap dan angka ganjil menggunakan dua perulangan yang terpisah. Program kemudian mencetak semua data dalam array, diikuti dengan daftar angka genap dan ganjil secara terpisah menggunakan fungsi cout. Setelah program berhasil berjalan maka akan mengembalikan nilai 0.
 
 #### Output :
 <img width="235" alt="Screenshot 2024-03-23 123020" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/93991b0c-8a1d-4f35-85cd-9a0cd14bf1bb">
+
+Dari program diatas didapatkan output berisi data array yang tadi diinputkan yaitu ada 10 data. Kemudian data dalam bentuk array ditampilkan dan ditampilkan juga nomor genap dan nomor ganjil dalam data array secara terpisah.
 
 #### Full Code Screenshoot :
 <img width="960" alt="Screenshot 2024-03-23 123142" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/f4123b36-5771-436e-a122-82876f9cf73d">
@@ -222,10 +228,13 @@ int main() {
 }
 ```
 
-Program diatas menunjukkan penggunaan array tiga dimensi. Pengguna memasukkan dimensi array, lalu mengisi nilai setiap elemen array. Program kemudian menampilkan nilai array dalam format tabel. Array tiga dimensi berguna untuk menyimpan data dalam struktur multidimensi, seperti kubus atau matriks 3D.
+Program diatas menunjukkan penggunaan array tiga dimensi. Program mendeklarasikan tiga variabel integer x, y, dan z untuk menyimpan dimensi array (baris, kolom, dan layer). User diminta memasukkan dimensi array yang diinginkan melalui fungsi cout dan cin, lalu mengisi nilai setiap elemen array menggunakan perulangan for tiga kali. Program kemudian menampilkan nilai array dan melakukan perulangan for untuk menampilkan setiap elemen array. Ketika program berhasil dijalankan, maka program akan mengembalikan nilai 0.
+
 
 #### Output :
 <img width="226" alt="Screenshot 2024-03-23 123357" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/3521682b-79cd-4812-918b-c750af4ff8ea">
+
+Dari program diatas didapatkan output berisi daftar nilai array dengan jumlah baris nya 3, jumlah kolom nya 2 dan dibuat dalam 2 layer/lapisan yang dimana sudah diinputkan oleh user dan menampilkannya sesuai dengan jumlah kolom, baris, dan layer yang telah diinputkan.
 
 #### Full Code Screenshoot :
 <img width="960" alt="Screenshot 2024-03-23 123445" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/2af3dacd-7905-4cff-87d4-bf836e47fd34">
@@ -307,12 +316,16 @@ int main() {
 }
 ```
 
-Program ini meminta pengguna untuk memasukkan jumlah elemen array dan elemen-elemennya. Kemudian, program menghitung nilai maksimum, minimum, dan rata-rata dari array tersebut. Program menampilkan menu yang memungkinkan pengguna untuk melihat nilai maksimum, minimum, dan rata-rata, atau keluar dari program.
+Program diatas digunakan untuk menginput julah elemen array yang kemudian akan di cari dilai maksimum, nilai minimum, dan rata-ratanya. Program mendeklarasikan variabel n untuk menyimpan jumlah elemen array. Kemudian menampilkan pesan kepada pengguna untuk memasukkan jumlah elemen array menggunakan fungsi cout lalu membaca input dari pengguna menggunakan fungsi cin dan menyimpannya di variabel n. Kemudian menampilkan pesan kepada pengguna untuk memasukkan elemen-elemen array menggunakan fungsi cout. Program akan melakukan perulangan untuk membaca elemen-elemen array dari pengguna dan menyimpannya di vektor arr. Program menginisialisasikan max dengan nilai elemen pertama array, dan melakukan perulangan untuk mencari nilai maksimum array. Program menginisialisasi min dengan nilai elemen pertama array, dan melakukan perulangan untuk mencari nilai minimum array. Untuk mengetahui rata-rata dari array yang ada, program mendeklarasikan variabel sum untuk menyimpan total nilai array dan Mendeklarasikan variabel avg untuk menyimpan nilai rata-rata array. Program menginisialisasi sum dengan nilai 0, kemudian melakukan perulangan untuk menghitung nilai total array. Program akan menghitung nilai rata-rata nya dengan membagi sum dengan n. Untuk menampilkan pilihan nilai maksimal, minimal, dan rata-rata, program mendeklarasikan variabel pilihan untuk menyimpan pilihan user. Program akan melakukan switch case berdasarkan nilai pilihan. Jika program telah berjalan dengan baik dan benar, maka program akan mengembalikan nilai 0 dari fungsi utama.
 
 #### Output :
 <img width="233" alt="Screenshot 2024-03-23 123651" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/885ce79b-74d5-416b-ae17-26ef4b6cfa0c">
 
+
 <img width="200" alt="Screenshot 2024-03-23 123719" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/73e6384f-70c7-4957-9c1b-3349f9eb135b">
+
+
+Dari program diatas didapatkan output berisi jumlah elemen yang diiputkan user yaitu sebanyak 5 elemen, yaitu 1, 2, 3, 4, 5. Kemudian menampilkan juga pilihan untuk menampilkan nilai maksimum, minimum, dan rata-rata yang akan bekerja sesuai dengan inputan pilihan dari user untuk mengetahui hasil dari salah satu menu pilihan.
 
 
 #### Full Code Screenshoot :
@@ -320,7 +333,7 @@ Program ini meminta pengguna untuk memasukkan jumlah elemen array dan elemen-ele
 
 
 ## Kesimpulan
-
+Array adalah struktur data yang digunakan untuk menyimpan sekumpulan data dengan tipe data yang sama. Dimensi array menunjukkan berapa banyak tingkat atau lapisan yang dimiliki array. Array merupakan struktur data yang sangat penting dalam C++. Array sangat berguna untuk menyimpan dan memanipulasi data yang terstruktur.
 
 ## Referensi
 [1] R. H. Sianipar, Pemrograman C++ untuk pemula. Penerbit INFORMATIKA, 2014.
