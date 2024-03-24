@@ -322,6 +322,8 @@ Program diatas digunakan untuk menginput julah elemen array yang kemudian akan d
 <img width="233" alt="Screenshot 2024-03-23 123651" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/885ce79b-74d5-416b-ae17-26ef4b6cfa0c">
 
 
+
+
 <img width="200" alt="Screenshot 2024-03-23 123719" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/73e6384f-70c7-4957-9c1b-3349f9eb135b">
 
 
