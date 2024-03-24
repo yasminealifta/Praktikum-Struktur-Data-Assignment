@@ -335,7 +335,7 @@ Dari program diatas didapatkan output berisi jumlah elemen yang diiputkan user y
 
 
 ## Kesimpulan
-Array adalah struktur data yang digunakan untuk menyimpan sekumpulan data dengan tipe data yang sama. Dimensi array menunjukkan berapa banyak tingkat atau lapisan yang dimiliki array. Array merupakan struktur data yang sangat penting dalam C++. Array sangat berguna untuk menyimpan dan memanipulasi data yang terstruktur.
+Array adalah struktur data yang digunakan untuk menyimpan sekumpulan data dengan tipe data yang sama. Dimensi array menunjukkan berapa banyak tingkat atau lapisan yang dimiliki array. Array merupakan struktur data yang sangat penting dalam pemrograman dan sangat berguna untuk menyimpan dan mengelola data yang terstruktur.
 
 ## Referensi
 [1] R. H. Sianipar, Pemrograman C++ untuk pemula. Penerbit INFORMATIKA, 2014.
