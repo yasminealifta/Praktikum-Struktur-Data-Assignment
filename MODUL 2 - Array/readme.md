@@ -113,6 +113,7 @@ int main()
 }
 ```
 Program diatas untuk mencari nilai maksimal pada Array. Program meminta user untuk memasukkan panjang array dan nilai elemen array. Kemudian, program mencari nilai maksimum dengan membandingkan setiap elemen array. Jika ada elemen yang lebih besar dari nilai maksimum saat ini, maka nilai maksimum diperbarui dan lokasinya disimpan. Program akan menampilkan nilai maksimum dan lokasinya ke layar.
+
 #### Output :
 <img width="432" alt="Screenshot 2024-03-23 121458" src="https://github.com/yasminealifta/Praktikum-Struktur-Data-Assignment/assets/161322990/460d7572-7fd1-4c3c-ae60-79b83497e081">
 
